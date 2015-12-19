@@ -11,6 +11,12 @@
     "name": "sohamkamani",
     "email": "sohamkamani@gmail.com"
   },
+  "keywords":[
+    "three",
+    "three.js",
+    "obj",
+    "loader"
+  ],
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.2.1",

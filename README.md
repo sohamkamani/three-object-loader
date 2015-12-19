@@ -2,7 +2,7 @@
 
 > NodeJS wrapper for Three.js' OBJLoader function
 
-By default, Three.js does not have OBJLoader built in. This is a NodeJS wrapper for the OBJLoader library so that it can be used with npm in systems using browserify, webpack, etc.
+By default, [Three.js](https://www.npmjs.com/package/three) does not have [OBJLoader](http://threejs.org/examples/js/loaders/OBJLoader.js) built in. This is a NodeJS wrapper for the OBJLoader library so that it can be used with npm in systems using browserify, webpack, etc.
 
 ## Install
 
