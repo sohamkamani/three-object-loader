@@ -1,6 +1,6 @@
 {
   "name": "three-obj-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NodeJS wrapper for Three.js' OBJLoader function",
   "main": "dist/index.js",
   "scripts": {
