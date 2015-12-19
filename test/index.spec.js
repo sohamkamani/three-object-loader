@@ -12,4 +12,10 @@ describe('OBJLoader Wrapper', ()=>{
     OBJLoader(THREE);
     expect(THREE.OBJLoader).to.be.a('function');
   });
+
+  it('Is an instance of ObjectLoader', ()=>{
+    const loader = new THREE.OBJLoader();
+    expect(loader).to.be.an.instanceof(THREE.OBJLoader);
+  });
+
 });
