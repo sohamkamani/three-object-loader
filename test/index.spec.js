@@ -1,9 +1,15 @@
 'use strict';
 import {expect} from 'chai';
-import hello from '../source';
+import THREE from 'three';
+import OBJLoader from '../source/';
 
-describe('Hello World', ()=>{
-  it('Outputs hello world', ()=>{
-    expect(hello('world')).to.equal('Hello world!');
+describe('OBJLoader Wrapper', ()=>{
+  it('THREE does not contain OBJLoader by default', ()=>{
+    expect(THREE.OBJLoader).to.be.a('undefined');
+  });
+
+  it('Assigns THREE.OBJLoader as a function once called', ()=>{
+    OBJLoader(THREE);
+    expect(THREE.OBJLoader).to.be.a('function');
   });
 });
