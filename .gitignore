@@ -2,3 +2,4 @@ node_modules
 build
 coverage
 npm-debug.log
+dist
