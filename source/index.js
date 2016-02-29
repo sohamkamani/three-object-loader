@@ -20,18 +20,11 @@ module.exports = function (THREE) {
       var scope = this;
 
       var loader = new THREE.XHRLoader(scope.manager);
-      loader.setCrossOrigin(this.crossOrigin);
       loader.load(url, function (text) {
 
         onLoad(scope.parse(text));
 
       }, onProgress, onError);
-
-    },
-
-    setCrossOrigin: function (value) {
-
-      this.crossOrigin = value;
 
     },
 
