@@ -1,6 +1,6 @@
 {
   "name": "three-obj-loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "NodeJS wrapper for Three.js' OBJLoader function",
   "main": "dist/index.js",
   "scripts": {
@@ -37,7 +37,7 @@
     "jshint-stylish": "^2.1.0",
     "remap-istanbul": "^0.4.0",
     "source-map-support": "^0.3.3",
-    "three": "^0.73.0"
+    "three": ">=0.73.0"
   },
   "dependencies": {}
 }

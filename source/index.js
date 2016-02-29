@@ -20,7 +20,6 @@ module.exports = function (THREE) {
       var scope = this;
 
       var loader = new THREE.XHRLoader(scope.manager);
-      loader.setCrossOrigin(this.crossOrigin);
       loader.load(url, function (text) {
 
         onLoad(scope.parse(text));
@@ -29,11 +28,6 @@ module.exports = function (THREE) {
 
     },
 
-    setCrossOrigin: function (value) {
-
-      this.crossOrigin = value;
-
-    },
 
     parse: function (text) {
 
@@ -345,7 +339,7 @@ module.exports = function (THREE) {
 
       var container = new THREE.Object3D();
       var l;
-      
+
       for ( i = 0, l = objects.length; i < l; i++) {
 
         object = objects[i];
