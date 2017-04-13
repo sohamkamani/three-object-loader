@@ -1,6 +1,6 @@
 {
   "name": "three-obj-loader",
-  "version": "1.0.2",
+  "version": "1.1.2",
   "description": "NodeJS wrapper for Three.js' OBJLoader function",
   "main": "dist/index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "name": "sohamkamani",
     "email": "sohamkamani@gmail.com"
   },
-  "keywords":[
+  "keywords": [
     "three",
     "three.js",
     "obj",
@@ -37,7 +37,8 @@
     "jshint-stylish": "^2.1.0",
     "remap-istanbul": "^0.4.0",
     "source-map-support": "^0.3.3",
-    "three": ">=0.73.0"
+    "three": "^0.84.0"
   },
-  "dependencies": {}
+  "dependencies": {
+  }
 }

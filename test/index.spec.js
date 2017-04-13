@@ -1,6 +1,6 @@
 'use strict';
 import {expect} from 'chai';
-import THREE from 'three';
+const THREE = require('three');
 import OBJLoader from '../source/';
 
 describe('OBJLoader Wrapper', ()=>{
