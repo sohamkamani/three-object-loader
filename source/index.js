@@ -422,9 +422,14 @@ module.exports = function (THREE) {
 
     },
 
-    parse: function (text) {
+    parse: function (text, debug) {
+      if (typeof(debug) === 'undefined') {
+        debug = true;
+      }
 
-      console.time('OBJLoader');
+      if (debug) {
+        console.time('OBJLoader');
+      }
 
       var state = this._createParserState();
 
@@ -738,7 +743,9 @@ module.exports = function (THREE) {
 
       }
 
-      console.timeEnd('OBJLoader');
+      if (debug) {
+        console.timeEnd('OBJLoader');
+      }
 
       return container;
 
