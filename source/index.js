@@ -1,5 +1,9 @@
 'use strict';
 
+function defaultOnError(err) {
+  throw new Error(err);
+}
+
 module.exports = function (THREE) {
 
   /**
@@ -46,6 +50,7 @@ module.exports = function (THREE) {
     load: function (url, onLoad, onProgress, onError) {
 
       var scope = this;
+      this.onError = onError || defaultOnError;
 
       var loader = new THREE.FileLoader(scope.manager);
       loader.setPath(this.path);
@@ -508,7 +513,7 @@ module.exports = function (THREE) {
 
           } else {
 
-            throw new Error("Unexpected vertex/normal/uv line: '" + line + "'");
+            this.onError("Unexpected vertex/normal/uv line: '" + line + "'");
 
           }
 
@@ -561,7 +566,7 @@ module.exports = function (THREE) {
 
           } else {
 
-            throw new Error("Unexpected face line: '" + line + "'");
+            this.onError("Unexpected face line: '" + line + "'");
 
           }
 
@@ -638,7 +643,7 @@ module.exports = function (THREE) {
           // Handle null terminated files without exception
           if (line === '\0') continue;
 
-          throw new Error("Unexpected line: '" + line + "'");
+          this.onError("Unexpected line: '" + line + "'");
 
         }
 
