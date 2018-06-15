@@ -734,7 +734,7 @@ module.exports = function (THREE) {
 
           }
 
-          mesh = (!isLine ? new THREE.Mesh(buffergeometry, createdMaterials) : new THREE.LineSegments(buffergeometry, multiMaterial));
+          mesh = (!isLine ? new THREE.Mesh(buffergeometry, createdMaterials) : new THREE.LineSegments(buffergeometry, createdMaterials));
 
         } else {
 
