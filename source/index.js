@@ -715,7 +715,7 @@ module.exports = function (THREE) {
 
           }
 
-          material.flatShading = sourceMaterial.smooth ? false : true;
+          material.shading = sourceMaterial.smooth ? THREE.SmoothShading : THREE.FlatShading;
 
           createdMaterials.push(material);
 
